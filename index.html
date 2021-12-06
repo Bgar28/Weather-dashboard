@@ -11,10 +11,21 @@
 </head>
 
 <body>
-    <header class = "bg-primary text-white text-center p-2">
-        <h1>Weather Dashboard</h1>
+    <header class ='bg-primary text-white text-center p-1 display-2'>
+        <span>My Weather Dashboard</span>
     </header>
-
+    <main class='container-fluid'>
+        <div class='col-12 col-md-3 p-2 search-area'>
+            <form class = 'border p-2' id ='search-form'>
+                <h4>Search for a City</h2>
+                <input id='city' type ='text' class ='city-input' placeholder='Enter City Name' autofocus />
+                <button class ='btn btn-info' type ='submit'>Search</button>
+            </form>
+            <div class = 'search-history row'>
+                <ul class='search-history-cities'></ul>
+            </div>
+        </div>
+    </main>
 
 
 
